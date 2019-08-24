@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Caveat', sans-serif;
+    margin: 0;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 1px rgba(0, 0, 0, 0.19);
+    scroll-behavior: smooth;
+}
+
+.l-heading {
+    font-size: 5em;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 3em;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.text-primary {
+    color: #a11414;;
+}
+
+.logo {
+    padding: 0.2rem;
+}
+
+.bg-light {
+    background-color: #680a0a13;
+}
+
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
+
+a {
+    text-decoration: under
+}
+
+p {
+    margin: 0.25rem 0;
+}
+
+/*navbar start */
+#header-container{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+#header-container #advertising-nav{
+    background: rgb(161, 21, 21);
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+}
+
+#main-contacts-nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+}
+
+#main-contacts-nav p {
+    margin: 0.5rem;
+}
+
+#social-media-nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center; /* to languages always stay in center, see - https://stackoverflow.com/questions/44398365/center-a-flex-item-when-its-siblings-have-different-widths */
+}
+
+#social-media-nav i {
+    margin: 0.5rem 1rem;
+    font-size: 20px;
+}
+
+#languages-nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+}
+
+#languages-nav a {
+    margin: 0.5rem 1rem;
+    font-size: 20px;
+}
+
+#languages-nav a img {
+    width: 20px;
+    height: 20px;
+}
+
+#navbar {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+#navbar img {
+    padding: 2px;
+    height: 70px;
+    margin-left: 0.75rem;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+    padding: 0.75rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#showcase {
+    background: url('img/landscape2.jpg') no-repeat center 0%/cover;
+    height: 90vh;
+    color: #fff;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    padding: 2rem 2rem 0 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.showcase-content .showcase-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.showcase-content .showcase-buttons .btn{
+    margin: 1rem;
+}
+
+.headabout {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #680a0a13;
+    padding: 0.5rem 0;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.showcase-content .btn {
+    text-align: center;
+}
+
+#apartaments .intro {
+    padding: 0.5rem 3.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+#apartaments .items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#apartaments .items .item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1rem 2rem;
+    box-shadow: 6px 5px 8px 4px rgba(0, 0, 0, 0.062), 7px 8px 20px 8px rgba(0, 0, 0, 0.055);
+    margin-top: 3rem;
+}
+
+#apartaments .items .item img {
+    width: 300px;
+    height: 300px;
+    padding: 1rem
+   /* padding: 0rem; */
+}
+
+#apartaments .items .item .text-container {
+    padding: 0rem 1.2rem 1.2rem 1.2rem;
+    max-width: 300px;
+}
+
+#apartaments .items .item .text-container .info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#apartaments .items .item h2 {
+    margin-top: 1rem;
+}
+
+#apartaments .items .item p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+#apartaments .items .item .btn {
+    margin: 1rem 0.5rem 0.5rem 0rem;
+    color: black;
+    border: 1px solid black;
+}
+
+#entertainments{
+    display: flex;
+}
+
+#entertainments div {
+    flex: 1;
+}
+
+#entertainments .image-container {
+    background: url('img/yachtsailing/5.jpg') no-repeat center center/cover;
+}
+
+#entertainments .ent-container {
+    font-size: 1.2rem;
+}
+
+#entertainments .ent-container h1 {
+    margin-top: 0.5rem;
+}
+
+#entertainments .ent-container p {
+    margin-top: 2rem;
+}
+
+#entertainments .ent-container .ent-infos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#entertainments .ent-container .ent-infos-container .ent-info-item p {
+    font-size: 1rem;
+}
+
+#entertainments .ent-container i {
+    font-size: 3rem;
+}
+
+#entertainments .ent-container .ent-infos-container .ent-info-item {
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#feedback .items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+#feedback .items .item {
+    text-align: center;
+    margin: 0.5rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 1px rgba(0, 0, 0, 0.055);
+    padding: 1rem;
+}
+
+#feedback .items .item p {
+    font-size: 1.3rem;
+    max-width: 300px;
+}
+
+#feedback .items .item img {
+    width: 300px;
+    height: 250px;
+    padding: 1rem;
+}
+
+#contacts-footer .logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #680a0a13;
+    text-align: center;
+}
+
+#contacts-footer .logo-container i {
+    font-size: 4rem;
+}
+
+#contacts-footer .logo-container h3 {
+    font-size: 1.5rem;
+}
+
+#adv-footer {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: rgb(161, 21, 21);
+    color: white;
+}
+
+#adv-footer a {
+    text-decoration:none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#adv-footer .icon-adv{
+    flex: 1 0 0;
+}
+
+#adv-footer .canaria-adv{
+    flex: 1 0 0;
+}
+
+#adv-footer .scarf-adv{
+    text-align: center;
+}
+
+.socialinstagram i {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
