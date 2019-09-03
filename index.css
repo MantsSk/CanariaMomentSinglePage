@@ -911,3 +911,141 @@ p {
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  @media only screen and (max-width: 768px) {
+    #header-container #advertising-nav {
+        font-size: 0.8rem;
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    #main-contacts-nav {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        text-align: center;
+    }
+    
+    #languages-nav {
+        flex:1;
+        text-align: center;
+    }
+    
+    #social-media-nav {
+        display: none;
+    }
+    
+    .l-heading {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    .m-heading {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        text-align: center;
+        font-family: 'EB Garamond';
+    }
+    
+    .headabout {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 1.7rem;
+    }
+    
+    .btn {
+        width: 6rem;
+    }
+    
+    #showcase {
+        height: 100vh;
+    }
+    
+    .showcase-content .slide .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        height: 100%;
+        padding: 2rem;
+        background-color:rgba(0, 0, 0, 0.089);
+    }
+    
+    
+    
+    .showcase-content .showcase-buttons {
+    
+    }
+    
+    .arrow {
+       display:none;
+    }
+    
+    #apartaments .intro {
+        display: none;
+    }
+    
+    #apartaments .items .item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0.5rem 1rem;
+        box-shadow: 6px 5px 8px 4px rgba(0, 0, 0, 0.062), 7px 8px 20px 8px rgba(0, 0, 0, 0.055);
+        margin-top: 3rem;
+    }
+    
+    #apartaments .items .item .text-container {
+        padding: 0rem 1.2rem 1.2rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    #entertainments {
+        flex-direction: column;
+    }
+    
+    #feedback .items .item {
+        margin: 2rem 1rem 0 1rem;
+    }
+    
+    #contacts-footer .contacts-container {
+        font-size: 0.2rem;
+    }
+    
+    #contacts-footer .logo-container h3 {
+        font-size: 2rem;
+    }
+    
+    #contacts-footer .contact-container .logo-container i {
+        font-size: 4rem;
+    }
+    
+    #contacts-footer .contact-container .logo-container {
+        flex-direction: row;
+        flex-wrap:wrap;
+        font-size: 0.8rem;
+    }
+    
+    #adv-footer {
+        font-size: 0.6rem;
+        padding: 0;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    #adv-footer div:nth-child(3) {
+        display: none;
+    }
+    
+    #adv-footer .icon-adv {
+        flex:1;
+    }
+    
+    #adv-footer .canaria-adv {
+        flex:1;
+    }
+  }    
