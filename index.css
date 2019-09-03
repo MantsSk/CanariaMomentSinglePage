@@ -10,8 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html,body {
+    height:100%;
+}
+
 body {
-    font-family: 'Caveat', sans-serif;
+    font-family: 'EB Garamond','Open Sans', 'Roboto' sans-serif;
     margin: 0;
     /*padding-left: 30px;
     padding-right: 30px;*/
@@ -20,22 +24,23 @@ body {
 }
 
 .l-heading {
-    font-size: 5em;
-    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.1;
     text-align: center;
 }
 
 .m-heading {
-    font-size: 3em;
+    font-size: 2rem;
     margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     text-align: center;
+    font-family: 'EB Garamond';
 }
 
 .text-primary {
-    color: #a11414;;
+    color: #a11414;
 }
 
 .logo {
@@ -43,12 +48,189 @@ body {
 }
 
 .bg-light {
-    background-color: #680a0a13;
+    background-color: #680a0a0c;
 }
+
+.closeBtn {
+    float:right;
+    cursor: pointer;
+    display:block;
+    box-sizing:border-box;
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+    margin-right: 6px;
+    border-width:3px;
+    border-style: solid;
+    border-color:#a11414;
+    border-radius:100%;
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+    background-color:#a11414;
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;    
+}
+
+.closeBtn:hover{
+    box-shadow:0px 0px 5px 2px rgba(153, 0, 0, 0.5);
+    background-color:#a11414ad;
+    border-color:#a11414ad;
+}
+
+.active {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%); 
+    -o-filter: grayscale(0%);
+}
+
+.inactive {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
+}
+
+.square {
+    height: 15px;
+    width: 15px;
+    margin-top: 1.15rem;
+    margin-left: 1rem;
+    background-color: #fff;
+}
+
+.redsquare {
+    height: 15px;
+    width: 15px;
+    margin-top: 1.15rem;
+    margin-left: 1rem;
+    background-color: red;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  margin: -50px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index:1;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+    height: 10%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.rowAbout {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+}
+
+.rowAbout:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .columnAbout {
+    float: left;
+    width: 16.66%;
+  }
+  
+/* Six columns side by side */
+.columnAbout {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+  }
+  
+  .activeSlide,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
 
 .p-1{padding: 1.5rem;}
 .p-2{padding: 2rem;}
 .p-3{padding: 3rem;}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+  }
+
+  @-webkit-keyframes modalOpen
+  {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  @keyframes modalOpen
+  {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
 
 
 a {
@@ -93,9 +275,20 @@ p {
     text-align: center; /* to languages always stay in center, see - https://stackoverflow.com/questions/44398365/center-a-flex-item-when-its-siblings-have-different-widths */
 }
 
+#social-media-nav a {
+    text-decoration: none;
+}
+
 #social-media-nav i {
     margin: 0.5rem 1rem;
     font-size: 20px;
+    transition: all 150ms ease-out;
+    color:white;
+}
+
+#social-media-nav i:hover {
+    color:rgba(192, 188, 188, 0.877);
+    cursor: pointer;
 }
 
 #languages-nav {
@@ -107,6 +300,7 @@ p {
 #languages-nav a {
     margin: 0.5rem 1rem;
     font-size: 20px;
+    transition: all 150ms ease-out;
 }
 
 #languages-nav a img {
@@ -114,8 +308,13 @@ p {
     height: 20px;
 }
 
+#languages-nav a:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%); 
+    -o-filter: grayscale(0%);
+}
+
 #navbar {
-    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;
     position: sticky;
@@ -125,6 +324,10 @@ p {
     justify-content: space-between;
     z-index: 1;
     padding: 0 1.5rem 0 1.5rem;
+    transition: all 300ms ease-out;
+    z-index:100; /* avoid anything being on top */
+    font-family: 'EB Garamond';
+    font-style: italic;
 }
 
 #navbar img {
@@ -140,26 +343,65 @@ p {
     margin: 0 1rem;
 }
 
+
 #navbar ul li a{
-    color: rgb(0, 0, 0);
+    color: rgb(63, 58, 58);
     padding: 0.75rem;
     text-decoration: none;
+    font-size: 1rem;
     margin: 0 0.5rem;
+    display: block;
+    font-weight: 500;
+}
+
+#navbar ul li a:hover{
+    color: rgb(163, 16, 16);
+}
+
+#navbar ul li {
+    color: rgb(0, 0, 0);
+    float: left;
+    position: relative;
+  }
+  
+#navbar ul li::after {
+    background-color: rgb(163, 16, 16);
+    content: "";
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.55s ease 0s;
+    position: absolute;
+  }
+  
+#navbar ul li:hover::after {
+    width: 100%;
 }
 
 #showcase {
-    background: url('img/landscape2.jpg') no-repeat center 0%/cover;
-    height: 90vh;
+    height: 100vh;
     color: #fff;
 }
 
-.showcase-content{
+.showcase-content .slide .slide-content {
     display: flex;
     flex-direction: column;
     align-items:center;
     height: 100%;
-    padding: 2rem 2rem 0 2rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    background-color:rgba(0, 0, 0, 0.089);
+}
+
+.showcase-content .slide1 {
+    background: url(img/lanscapeshow.jpeg) no-repeat center 5%/cover;
+}
+
+.showcase-content .slide2 {
+    background: url(img/lanscapeshow2.jpeg) no-repeat center 5%/cover;
+}
+.showcase-content .slide3 {
+    background: url(img/lanscapeshow5.jpeg) no-repeat center 40%/cover;
 }
 
 .showcase-content .showcase-buttons {
@@ -170,6 +412,64 @@ p {
 
 .showcase-content .showcase-buttons .btn{
     margin: 1rem;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+    z-index: 1;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slideshow-container .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: 55px 55px;
+    border-radius: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container #arrow-left {
+    left: 0;
+    margin-left: 5px;
+    z-index: 1;
+}
+
+.slideshow-container #arrow-right {
+    background-image: url('img/arrowRight.png');
+    right: 0;
+    margin-right: 5px;
+    z-index: 1;
 }
 
 .headabout {
@@ -196,11 +496,20 @@ p {
     text-align: center;
 }
 
+#apartaments {
+    padding:1rem 0rem;
+    display: flex;
+    flex: 1;
+}
+
 #apartaments .intro {
     padding: 0.5rem 3.5rem;
     margin-top: 1rem;
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 2rem;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 1rem;
 }
 
 #apartaments .items{
@@ -208,6 +517,8 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Open Sans';
+    font-style: italic;
 }
 
 #apartaments .items .item {
@@ -218,6 +529,10 @@ p {
     margin: 1rem 2rem;
     box-shadow: 6px 5px 8px 4px rgba(0, 0, 0, 0.062), 7px 8px 20px 8px rgba(0, 0, 0, 0.055);
     margin-top: 3rem;
+}
+
+#apartaments .items .item h2 {
+    font-family: 'Caveat';
 }
 
 #apartaments .items .item img {
@@ -239,21 +554,189 @@ p {
     text-align: center;
     justify-content: space-between;
     padding: 1rem 1rem 1rem 1rem;
+    font-size: 0.8rem;
 }
 
 #apartaments .items .item h2 {
     margin-top: 1rem;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-style: italic;
 }
 
 #apartaments .items .item p {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 #apartaments .items .item .btn {
     margin: 1rem 0.5rem 0.5rem 0rem;
     color: black;
     border: 1px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#apartaments .items .item .btn:hover {
+    background-color: #b12020d3;
+    color: white;
+}
+
+.modal {
+    display:none;
+    position:fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgba(0, 0, 0, 0.699);
+  }
+
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4), 0 7px 20px 0 rgba(0, 0, 0, 0.4);
+    animation-name: modalOpen;
+    animation-duration: 1s;
+  }
+
+  .modal-header{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 8px 0 rgba(3, 120, 255, 0.068), 0 7px 20px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-header h2, .modal-footer p {
+    margin: 5px;
+    text-align: center;
+    font-family:'EB Garamond',arial,sans-serif;
+  }
+
+  .modal-body{
+    height: 450px;
+    /* padding: 35px 45px; */
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .modal-body .info-side{
+    flex:1;
+    padding: 1.5rem;
+    font-family:'EB Garamond',arial,sans-serif;
+  }
+
+  .modal-body .info-side .info-column .info-text{
+    padding:1rem;
+    margin: 0.5rem;
+    line-height: 5px;
+    font-size: 0.8rem;
+    font-family:'Open Sans',arial,sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar-column {
+    margin-top: 20px;
+}
+
+.calendar-column .calendar-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.calendar-column .calendar-legend .legend-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ .calendar {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .calendar__date {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 2fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    font-weight: 300;
+    color: #262626;
+  }
+  
+  .calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    color: #262626;
+  }
+
+  .modal-body .info-side .info-column .info-text h3 {
+    margin: 1;
+  }
+
+  .modal-body .info-side p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        font-family: 'Open Sans';
+        font-style: italic;
+  }
+
+  .modal-body .info-side h2{ 
+    font-family: 'Open Sans',arial,sans-serif;
+    text-align: center;
+    border-bottom: 1px solid;
+    font-style: italic;
+  }
+
+  .modal-body .photo-side {
+      flex:1;
+      padding: 1rem 2rem 4rem 1rem;
+  }
+
+  .modal-body .photo-side img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 1px rgba(0, 0, 0, 0.19);
+    padding: 3px;
+}
+
+.modal-footer {
+    border-top: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #entertainments{
@@ -264,8 +747,26 @@ p {
     flex: 1;
 }
 
-#entertainments .image-container {
-    background: url('img/yachtsailing/5.jpg') no-repeat center center/cover;
+.ent-images-container {
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image1 {
+    background: url('img/yachtsailing/4.jpg') no-repeat center center/cover;
+}
+
+ .image2 {
+    background: url('img/yachtsailing/3.jpg') no-repeat center center/cover;
+}
+
+.image3 {
+    background: url('img/yachtsailing/2.jpg') no-repeat center center/cover;
 }
 
 #entertainments .ent-container {
@@ -278,16 +779,20 @@ p {
 
 #entertainments .ent-container p {
     margin-top: 2rem;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
 #entertainments .ent-container .ent-infos-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
 #entertainments .ent-container .ent-infos-container .ent-info-item p {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #entertainments .ent-container i {
@@ -300,8 +805,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    /*
+    box-shadow: inset 0 0 15px 5px rgba(169, 163, 163, 0.15);
+    border-radius:30px;
+    */
 }
 
 #feedback .items{
@@ -313,6 +822,8 @@ p {
 }
 
 #feedback .items .item {
+    font-family: 'EB Garamond';
+    font-style: italic;
     text-align: center;
     margin: 0.5rem 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 1px rgba(0, 0, 0, 0.055);
@@ -320,8 +831,10 @@ p {
 }
 
 #feedback .items .item p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     max-width: 300px;
+    padding: 0 1rem;
+    text-align: left;
 }
 
 #feedback .items .item img {
@@ -330,20 +843,32 @@ p {
     padding: 1rem;
 }
 
-#contacts-footer .logo-container {
+#contacts-footer .contact-container .logo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #680a0a13;
     text-align: center;
+    cursor:pointer;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
-#contacts-footer .logo-container i {
+#contacts-footer .contact-container .logo-container div:hover {
+    background-color: #fff;
+}
+
+#contacts-footer .contact-container .logo-container div {
+    flex:1;
+    padding: 2rem 1rem;
+}
+
+#contacts-footer .contact-container .logo-container i {
     font-size: 4rem;
 }
 
 #contacts-footer .logo-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.51rem;
 }
 
 #adv-footer {
@@ -354,6 +879,7 @@ p {
     padding: 0 2rem;
     background: rgb(161, 21, 21);
     color: white;
+    font-size: 0.9rem;
 }
 
 #adv-footer a {

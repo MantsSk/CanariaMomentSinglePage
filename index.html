@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" contect = "width=device-width, initial=scale=1.0">
     <title>Canaria Moment - Kelionės po Gran Kanarija</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dosis|Open+Sans|Raleway|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" href="widescreen.css" media="screen and (min-width: 1100px)" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="widescreen.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300i,400&display=swap" rel="stylesheet">
 </head>
 
 <body id = "main">
-    <div id = "header-container">
+    <header id = "header-container">
         <div id = "advertising-nav">
             <div id = "main-contacts-nav">
                 <p><i class="fa fa-phone"></i> +37069653993</p>
                 <p><i class="fa fa-envelope"></i> canaria.moment@gmail.com</p>
             </div>
             <div id = "languages-nav">
-                <a href = "index.html"><img src="img/lithuania (1).png"/></a>
-                <a href = "index.html"><img src="img/united-kingdom.png"/></a>
-                <a href = "index.html"><img src="img/russia.png"/></a>
+                <a class = "active" href = "index.html"><img src="img/lithuania (1).png"/></a>
+                <a class = "inactive" href = "index.html"><img src="img/united-kingdom.png"/></a>
+                <a class = "inactive" href = "index.html"><img src="img/russia.png"/></a>
             </div>
             <div id = "social-media-nav">
-                <i class="fab fa-facebook icon"></i>
-                <i class="fab fa-facebook-messenger"></i> 
-                <i class="fab fa-instagram"></i> 
+                <a href = "facebook.com"><i class="fab fa-facebook-messenger"></i></a>
+                <a href = "instagram.com"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
+    </header>
         <nav id = "navbar">
             <a href = "index.html"><img src="img/logo.png"/></a>
             <uL>
@@ -34,19 +43,197 @@
                 <li><a href="#entertainments">Pramogos</a></li>
                 <li><a href="#feedback">Atsiliepimai</a></li>
                 <li><a href="#contacts-footer">Kontaktai</a></li>
+                <div class = "line"></div>
             </uL>
         </nav>
-        <header id = "showcase">
+        <section id = "showcase">
             <div class = "showcase-content">
-                <h1 class = "l-heading">Nepamirštami įspudžiai Gran Kanarijoje</h1>
-                <p class = "headabout">Apartamentai, pramogos ir kiti nepamirštami įspudžiai kartu su Canaria Moment</p>
-                <div class = "showcase-buttons">
-                    <a href ="#apartaments" class = "btn">Apartamentai</a>
-                    <a href ="#entertainments" class = "btn">Pramogos</a>
-                    <a href ="#contacts" class = "btn">Kontaktai</a>
+            <div id = "arrow-left" class = "arrow"></div>
+                <div class = "slide slide1 fade">
+                    <div class = "slide-content">
+                        <h1 class = "l-heading">Nepamirštami įspudžiai Gran Kanarijoje</h1>
+                        <p class = "headabout">Apartamentai, pramogos ir kiti nepamirštami įspudžiai kartu su Canaria Moment</p>
+                        <div class = "showcase-buttons">
+                            <a href ="#apartaments" class = "btn">Apartamentai</a>
+                            <a href ="#entertainments" class = "btn">Pramogos</a>
+                            <a href ="#contacts-footer" class = "btn">Kontaktai</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "slide slide2 fade">
+                    <div class = "slide-content">
+                        <h1 class = "l-heading">Nepamirštami fa-facebook Gran faf</h1>
+                        <p class = "headabout">Apartamentai, faf ir kiti nepamirštami faff kartu su fafaf Moment</p>
+                        <div class = "showcase-buttons">
+                            <a href ="#apartaments" class = "btn">Apartamentai</a>
+                            <a href ="#entertainments" class = "btn">Pramogos</a>
+                            <a href ="#contacts-footer" class = "btn">Kontaktai</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "slide slide3 fade">
+                    <div class = "slide-content">
+                        <h1 class = "l-heading">Nepamirštami įspudžiai Gran Kanarijoje</h1>
+                        <p class = "headabout">Apartamentai, pramogos ir kiti nepamirštami įspudžiai kartu su Canaria Moment</p>
+                        <div class = "showcase-buttons">
+                            <a href ="#apartaments" class = "btn">Apartamentai</a>
+                            <a href ="#entertainments" class = "btn">Pramogos</a>
+                            <a href ="#contacts-footer" class = "btn">Kontaktai</a>
+                        </div>
+                    </div>
+                </div>
+                <div id = "arrow-right" class = "arrow"></div>
+            </div>
+        </section>
+
+    <section id = "entModal" class="modal">
+        <div class="modal-content">
+            <div class ="modal-header">
+                <a id="closeBtn" class="closeBtn" onclick="closeModal('entModal')"></a>
+                <div class = "header-text">
+                    <h2>Miami <span class = "text-primary">Beach</span></h2>
                 </div>
             </div>
-        </header>
+            <div class="modal-body">
+                <div class="info-side">
+                    <div class = "info-column">                        
+                        <div class = "info-text">
+                            <h3>Vietų kiekis - <span class = "text-primary">4</span></h3>
+                            <h3>Kaina savaitei - <span class = "text-primary">400e</span></h3>
+                        </div>
+                        <p>Ačiū Canaria Moment už nerealiai fainiai organizuotas ekskurijas po Gran Canaria ir su katamaranu, mes tau sakom 3 kart ačiū ir prižadam grįžti</p>
+                    </div>
+                    <div class = "calendar-column">
+                        <h2>Užimtumas</h3>
+                        <div class="calendar">
+                                <div class="calendar__picture">
+                                  <h3 class ="text-primary">Lapkritis</h3>
+                                </div>
+                                <div class="calendar__date">
+                                  <div class="calendar__day">M</div>
+                                  <div class="calendar__day">T</div>
+                                  <div class="calendar__day">W</div>
+                                  <div class="calendar__day">T</div>
+                                  <div class="calendar__day">F</div>
+                                  <div class="calendar__day">S</div>
+                                  <div class="calendar__day">S</div>
+                                  <div class="calendar__number"></div>
+                                  <div class="calendar__number"></div>
+                                  <div class="calendar__number"></div>
+                                  <div class="calendar__number">1</div>
+                                  <div class="calendar__number">2</div>
+                                  <div class="calendar__number">3</div>
+                                  <div class="calendar__number">4</div>
+                                  <div class="calendar__number">5</div>
+                                  <div class="calendar__number">6</div>
+                                  <div class="calendar__number">7</div>
+                                  <div class="calendar__number">8</div>
+                                  <div class="calendar__number">9</div>
+                                  <div class="calendar__number">10</div>
+                                  <div class="calendar__number">11</div>
+                                  <div class="calendar__number">12</div>
+                                  <div class="calendar__number">13</div>
+                                  <div class="calendar__number">14</div>
+                                  <div class="calendar__number">15</div>
+                                  <div class="calendar__number">16</div>
+                                  <div class="calendar__number">17</div>
+                                  <div class="calendar__number calendar__number--current">18</div>
+                                  <div class="calendar__number">19</div>
+                                  <div class="calendar__number">20</div>
+                                  <div class="calendar__number">21</div>
+                                  <div class="calendar__number">22</div>
+                                  <div class="calendar__number">23</div>
+                                  <div class="calendar__number">24</div>
+                                  <div class="calendar__number">25</div>
+                                  <div class="calendar__number">26</div>
+                                  <div class="calendar__number">27</div>
+                                  <div class="calendar__number">28</div>
+                                  <div class="calendar__number">29</div>
+                                  <div class="calendar__number">30</div>
+                                </div>
+                              </div>
+                              <div class = "calendar-legend">
+                                <div class = "legend-item">
+                                    <p>Laisva - </p>
+                                    <div class="square"></div>
+                                </div>
+                                <div class = "legend-item">
+                                    <p>Užimta - </p>
+                                    <div class="redsquare"></div>
+                                </div>
+                              </div>
+                    </div>
+                </div>
+                <div class="photo-side">
+                    <div class="slideshow-container">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/landscape.jpg">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/landscape1.jpg">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="img/landscape2.jpg">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="img/lanscapeshow.jpeg">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/lanscapeshow2.jpeg">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class = "imgcontainer">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/lanscapeshow3.jpeg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="img/landscape.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/landscape1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/landscape2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/lanscapeshow.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/lanscapeshow2.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>    
+                            <div class="column">
+                                <img class="demo cursor" src="img/lanscapeshow3.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>   
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p><i class="fa fa-phone"></i>+34636985185</p>
+                <p><i class="fa fa-envelope"></i>Canaria.Moment@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
 
     <section id = "apartaments">
         <div class = "container">
@@ -68,7 +255,7 @@
                             <h3>Kaina: <span class = "text-primary">100e</span></h3>
                             <h3>Žmonių skaičius: <span class = "text-primary">4</span></h3>
                         </div>
-                        <a href ="#" class = "btn">Plačiau</a>
+                        <a onclick="openModal('entModal')" class = "btn">Plačiau</a>
                     </div>
                 </div>
                 <div class="item">
@@ -82,7 +269,7 @@
                             <h3>Kaina: <span class = "text-primary">100e</span></h3>
                             <h3>Žmonių skaičius: <span class = "text-primary">4</span></h3>
                         </div>
-                        <a href ="#" class = "btn">Plačiau</a>
+                        <a class = "btn">Plačiau</a>
                     </div>
                 </div>
                 <div class="item">
@@ -115,7 +302,7 @@
                 </div>
                 <div class="item">
                     <div class = "img-container">
-                        <img src = "img/jordinparaiso.jpeg"/>
+                        <img src = "img/miamibeach.jpeg"/>
                     </div>
                     <div class = "text-container">
                         <h2>Jordin <span class = "text-primary">Paraiso</span></h2>
@@ -130,9 +317,17 @@
             </div>
         </div>
     </section>    
+
     <section id = "entertainments">
-        <div class = "image-container">
-        
+        <div class = "ent-images-container">
+            <a id ="prev-arrow" class="prev" onclick="plusSlides(-1)">❮</a>
+            <a id = "next-arrow" class="next" onclick="plusSlides(1)">❯</a>
+            <div class = "image-container image1">
+            </div>
+            <div class = "image-container image2">
+            </div>
+            <div class = "image-container image3">
+            </div>
         </div>
         <div class = "ent-container bg-light p-3">
             <h2 class = "m-heading">Ką <span class = "text-primary">mes</span> siūlome</h2>
@@ -191,30 +386,33 @@
     </section>
 
     <section id = "contacts-footer">
-        <div class = "logo-container">
-            <div class = "email">
-                <h3>Paštas</h3>
-                <i class="fa fa-envelope" style="color:rgb(255, 0, 0)" aria-hidden="true"></i>
-                <p>canariamoment@gmail.com</p>
-            </div>
-            <div class = "socialfacebook">
-                <h3>Facebook</h3>
-                <i class="fab fa-facebook icon" style="color:rgba(0, 89, 255, 0.993)" aria-hidden="true"></i>
-                <p>Canaria Moment</p>
-            </div>
-            <div class = "socialinstagram">
-                <h3>Instagram</h3>
-                <i class="fab fa-instagram"  aria-hidden="true"></i>
-                <p>canaria_moment</p>
-            </div>
-            <div class = "contactnumber">
-                <h3>Contact number</h3>
-                <i class="fa fa-phone" style="color:rgba(219, 208, 43, 0.596)" aria-hidden="true"></i>
-                <p>+37069653993</p></div>
-            <div class = "location">
-                <h3>Adresas</h3>
-                <i class="fas fa-map-marker-alt" style="color:rgba(0, 128, 0, 0.596)" aria-hidden="true"></i>
-                <p>Tolminkiemio g.20, Vilnius</p>
+        <h2 class = "m-heading"><span class = "text-primary">Kontaktai</span></h2>
+        <div class = "bg-light contact-container">
+            <div class = "logo-container">
+                <div class = "socialfacebook">
+                    <h3>Facebook</h3>
+                    <i class="fab fa-facebook icon" style="color:rgba(0, 89, 255, 0.993)" aria-hidden="true"></i>
+                    <p>Canaria Moment</p>
+                </div>
+                <div class = "socialinstagram">
+                    <h3>Instagram</h3>
+                    <i class="fab fa-instagram"  aria-hidden="true"></i>
+                    <p>canaria_moment</p>
+                </div>
+                <div class = "email">
+                    <h3>Paštas</h3>
+                    <i class="fa fa-envelope" style="color:rgb(255, 0, 0)" aria-hidden="true"></i>
+                    <p>canariamoment@gmail.com</p>
+                </div>
+                <div class = "contactnumber">
+                    <h3>WhatsApp</h3>
+                    <i class="fab fa-whatsapp" style="color:rgba(219, 208, 43, 0.596)" aria-hidden="true"></i>
+                    <p>+37069653993</p></div>
+                <div class = "location">
+                    <h3>Adresas</h3>
+                    <i class="fas fa-map-marker-alt" style="color:rgba(0, 128, 0, 0.596)" aria-hidden="true"></i>
+                    <p>Tolminkiemio g.20, Vilnius</p>
+                </div>
             </div>
         </div>
     </section>
@@ -224,6 +422,11 @@
         <div class = "scarf-adv"><a>Website made by: www.scarfwebsites.com</a></div>
     </section>
     </div>
+    <script type="text/javascript" src = "js/scroll.js"></script>
+    <script type="text/javascript" src = "js/modal.js"></script>
+    <script type="text/javascript" src = "js/slideshow.js"></script>
+    <script type="text/javascript" src = "js/slideshowModal.js"></script>
+    <script type="text/javascript" src = "js/slideshowEnt.js"></script>
 </body>
 
 </html>

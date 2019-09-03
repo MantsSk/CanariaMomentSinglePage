@@ -1,0 +1,65 @@
+.l-heading {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-align: center;
+    font-family: 'EB Garamond';
+}
+
+.headabout {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+
+#showcase {
+    height: 100vh;
+}
+
+.showcase-content .slide .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    padding: 1rem;
+    background-color:rgba(0, 0, 0, 0.089);
+}
+
+.arrow {
+   display:none;
+}
+
+#apartaments .intro {
+    display: none;
+}
+
+#apartaments .items .item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0.5rem 1rem;
+    box-shadow: 6px 5px 8px 4px rgba(0, 0, 0, 0.062), 7px 8px 20px 8px rgba(0, 0, 0, 0.055);
+    margin-top: 3rem;
+}
+
+#apartaments .items .item .text-container {
+    padding: 0rem 1.2rem 1.2rem 1.2rem;
+    max-width: 200px;
+    font-size: 0.5rem;
+}
+
+#apartaments .items .item img {
+    width: 200px;
+    height: 300px;
+    padding: 1rem /* padding: 0rem; */;
+}
