@@ -537,7 +537,7 @@ p {
 }
 
 #apartaments .items .item img {
-    width: 300px;
+    width: 290px;
     height: 300px;
     padding: 1rem
    /* padding: 0rem; */
@@ -911,22 +911,42 @@ p {
   }
 
   @media only screen and (max-width: 768px) {
+
+    #navbar {
+        padding: 0;
+    }
+    
+    .navbar-toggle {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 32px;
+        display: block;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
     #header-container #advertising-nav {
         font-size: 0.8rem;
-        padding: 0;
+        padding: 0 1rem;
         justify-content: space-between;
     }
     
     #main-contacts-nav {
-        display: flex;
+        display: none;
         flex-direction: row;
-        flex: 1;
+        flex: 2;
         text-align: center;
     }
     
     #languages-nav {
         flex:1;
         text-align: center;
+        justify-content: center;
     }
     
     #social-media-nav {
@@ -934,7 +954,7 @@ p {
     }
     
     .l-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 2rem;
         margin-bottom: 1.5rem;
         line-height: 1.1;
@@ -959,6 +979,10 @@ p {
     .btn {
         width: 6rem;
     }
+
+    .p-3 {
+        padding: 1rem;
+    }
     
     #showcase {
         height: 100vh;
@@ -966,17 +990,18 @@ p {
     
     .showcase-content .slide .slide-content {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items:center;
         height: 100%;
         padding: 2rem;
         background-color:rgba(0, 0, 0, 0.089);
     }
-    
-    
-    
+
     .showcase-content .showcase-buttons {
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .arrow {
@@ -998,12 +1023,17 @@ p {
     }
     
     #apartaments .items .item .text-container {
-        padding: 0rem 1.2rem 1.2rem 1.2rem;
+        padding: 0rem 1.2rem 1rem 1.2rem;
         font-size: 1rem;
     }
     
     #entertainments {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .ent-images-container {
+        display: none;
     }
     
     #feedback .items .item {
