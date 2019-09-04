@@ -30,14 +30,17 @@
         </div>
     </header>
         <nav id = "navbar">
-            <a href = "index.html"><img src="img/logo.png"/></a>
-            <ul>
+            <a id = "logo" href = "index.html"><img src="img/logo.png"/></a>
+            <ul id = "list-nav">
                 <li><a href="#main">Kas mes</a></li>
                 <li><a href="#apartaments">Apartamentai</a></li>
                 <li><a href="#entertainments">Pramogos</a></li>
                 <li><a href="#feedback">Atsiliepimai</a></li>
                 <li><a href="#contacts-footer">Kontaktai</a></li>
             </ul>
+            <a id ="navbar-toggle" onclick="switchNavMode()">
+                <i class="fas fa-bars" id="js-navbar-toggle"></i>
+            </a>      
         </nav>
         <section id = "showcase">
             <div class = "showcase-content">
@@ -421,5 +424,6 @@
     <script type="text/javascript" src = "js/slideshowModal.js"></script>
     <script type="text/javascript" src = "js/slideshowEnt.js"></script>
     <script type="text/javascript" src = "js/makeactive.js"></script>
+    <script type="text/javascript" src = "js/navbar.js"></script>
 </body>
 </html>

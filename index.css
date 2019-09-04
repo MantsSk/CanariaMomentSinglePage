@@ -238,6 +238,10 @@ p {
     display: none;
 }
 
+#logo {
+    order:1;
+}
+
 /*navbar start */
 #header-container{
     color: rgb(0, 0, 0);
@@ -914,6 +918,7 @@ p {
 
     #navbar {
         padding: 0;
+        flex-wrap: wrap;
     }
 
     #navbar img {
@@ -928,29 +933,47 @@ p {
 
     #navbar ul {
         list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none;
+        /* align-items: center; */
+        flex-wrap: wrap; 
+        width: 100%;
+        /* border: 1px solid; */
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* text-align: center; */
+        margin: 0;
         /* margin: 0 1rem; */
+        order: 3;
     }
 
     #navbar ul li a {
-        color: rgb(63, 58, 58);
-        padding: 0.3rem;
-        text-decoration: none;
-        font-weight: 800;
         font-size: 0.8rem;
         margin: 0.3rem;
         display: block;
         text-align: center;
         font-weight: 600;
         justify-content: center;
+        display: inline-block;
+        color: #fff;
+        background-color: #a11414ad;
+        padding: 0.5rem 0;
+        width: 10rem;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+    }
+
+    #navbar ul li a:hover {
+        color: rgb(216, 215, 215);
     }
 
     #navbar {
         color: rgb(0, 0, 0);
-        display: flex;
-        position: sticky;
+        display: none;
+        position: relative;
         top: 0;
         z-index: 1;
         display: flex;
@@ -961,12 +984,25 @@ p {
         z-index: 100;
         font-family: 'EB Garamond';
         font-style: italic;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #navbar ul li {
         padding: 0.2rem 0.5rem;
     }
+
+    #navbar #list-nav {
+        display:none;
+    }
+
+    #navbar-toggle {
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 28px;
+        display: flex;
+        order:2;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+      }
 
     #header-container #advertising-nav {
         font-size: 0.8rem;
