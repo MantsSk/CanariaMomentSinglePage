@@ -1043,26 +1043,36 @@ p {
     #contacts-footer .contacts-container {
         font-size: 0.2rem;
     }
-    
+
     #contacts-footer .logo-container h3 {
-        font-size: 2rem;
+        font-size: 1rem;
+        margin: 0.5rem;
     }
     
     #contacts-footer .contact-container .logo-container i {
         font-size: 4rem;
     }
+
+    #contacts-footer .contact-container .logo-container p {
+        font-size: 0.7rem;
+    }
     
     #contacts-footer .contact-container .logo-container {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap:wrap;
         font-size: 0.8rem;
     }
+
+    #contacts-footer .contact-container .logo-container div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+    }
     
     #adv-footer {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         padding: 0;
         justify-content: space-around;
         text-align: center;
+        flex-direction: column;
     }
     
     #adv-footer div:nth-child(3) {
