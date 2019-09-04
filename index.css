@@ -76,15 +76,9 @@ body {
 }
 
 .active {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%); 
-    -o-filter: grayscale(0%);
-}
-
-.inactive {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%); 
-    -o-filter: grayscale(100%);
+    -webkit-filter: grayscale(0%) !important;
+    -moz-filter: grayscale(0%) !important;
+    -o-filter: grayscale(0%) !important;
 }
 
 .square {
@@ -240,6 +234,10 @@ p {
     margin: 0.25rem 0;
 }
 
+.navbar-toggle {
+    display: none;
+}
+
 /*navbar start */
 #header-container{
     color: rgb(0, 0, 0);
@@ -300,6 +298,9 @@ p {
     margin: 0.5rem 1rem;
     font-size: 20px;
     transition: all 150ms ease-out;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
 }
 
 #languages-nav a img {
@@ -484,7 +485,7 @@ p {
     color: #fff;
     background-color: #680a0a13;
     padding: 0.5rem 0;
-    width: 8rem;
+    width: 10rem;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -527,9 +528,8 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    margin: 1rem 2rem;
+    margin: 0.8rem 2rem 2rem 2rem;
     box-shadow: 6px 5px 8px 4px rgba(0, 0, 0, 0.062), 7px 8px 20px 8px rgba(0, 0, 0, 0.055);
-    margin-top: 3rem;
 }
 
 #apartaments .items .item h2 {
@@ -915,19 +915,57 @@ p {
     #navbar {
         padding: 0;
     }
-    
-    .navbar-toggle {
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        cursor: pointer;
-        color: rgba(0, 0, 0, 0.8);
-        font-size: 32px;
-        display: block;
+
+    #navbar img {
+        padding: 0;
+        height: 70px;
+        margin-left: 0rem;
+    }
+
+    #navbar a {
+        text-align: center;
     }
 
     #navbar ul {
-        display: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 1rem; */
+    }
+
+    #navbar ul li a {
+        color: rgb(63, 58, 58);
+        padding: 0.3rem;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 0.8rem;
+        margin: 0.3rem;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        justify-content: center;
+    }
+
+    #navbar {
+        color: rgb(0, 0, 0);
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        padding: 0;
+        transition: all 300ms ease-out;
+        z-index: 100;
+        font-family: 'EB Garamond';
+        font-style: italic;
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        padding: 0.2rem 0.5rem;
     }
 
     #header-container #advertising-nav {
@@ -1033,7 +1071,7 @@ p {
     }
     
     #feedback .items .item {
-        margin: 2rem 1rem 0 1rem;
+        margin: 1rem 1rem 0 1rem;
     }
     
     #contacts-footer .contacts-container {
