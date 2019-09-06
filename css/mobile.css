@@ -38,7 +38,7 @@
         justify-content: center;
         display: inline-block;
         color: #fff;
-        background-color: #a11414ad;
+        background-color: rgb(173, 11, 11);
         padding: 0.5rem 0;
         width: 10rem;
         border: none;
@@ -188,6 +188,10 @@
     .ent-images-container {
         display: none;
     }
+
+    .entintro {
+        display: none;
+    }
     
     #feedback .items .item {
         margin: 1rem 1rem 0 1rem;
@@ -239,3 +243,4 @@
     #adv-footer .canaria-adv {
         flex:1;
     }
+    

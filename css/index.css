@@ -81,6 +81,11 @@ body {
     -o-filter: grayscale(0%) !important;
 }
 
+.activeitem {
+    box-shadow: inset 0 0 15px 5px rgba(169, 163, 163, 0.15);
+    border-radius:30px;
+}
+
 .square {
     height: 15px;
     width: 15px;
@@ -121,6 +126,11 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -192,7 +202,7 @@ body {
     top: 0;
   }
 
-.p-1{padding: 1.5rem;}
+.p-1{padding: 1rem;}
 .p-2{padding: 2rem;}
 .p-3{padding: 3rem;}
 
@@ -397,16 +407,16 @@ p {
 }
 
 .showcase-content .slide1 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)), url(img/showcase/showcase1.jpg) no-repeat center 5%/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)), url(../img/showcase/showcase1.jpg) no-repeat center 5%/cover;
     filter: saturate(1.5);
 }
 
 .showcase-content .slide2 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)),  url(img/showcase/showcase2.jpg) no-repeat left 30%/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)),  url(../img/showcase/showcase2.jpg) no-repeat left 30%/cover;
     filter: saturate(1.5);
 }
 .showcase-content .slide3 {
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)),  url(img/showcase/showcase3.jpg) no-repeat center 95%/cover;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.082)),  url(../img/showcase/showcase3.jpg) no-repeat center 95%/cover;
     filter: saturate(1.5);
 }
 
@@ -472,7 +482,7 @@ p {
 }
 
 .slideshow-container #arrow-right {
-    background-image: url('img/arrowRight.png');
+    background-image: url('../img/arrowRight.png');
     right: 0;
     margin-right: 5px;
     z-index: 1;
@@ -554,12 +564,17 @@ p {
 
 #apartaments .items .item .text-container .info-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
     padding: 1rem 1rem 1rem 1rem;
     font-size: 0.8rem;
+    text-align: center;
+}
+
+#apartaments .items .item .text-container .info-container h3 {
+    margin-top: 0.4rem;
 }
 
 #apartaments .items .item h2 {
@@ -752,6 +767,10 @@ p {
     flex: 1;
 }
 
+#entertainments .imgcontainer-entmobile {
+    display: none;
+}
+
 .ent-images-container {
     position: relative;
 }
@@ -762,20 +781,69 @@ p {
     position: absolute;
 }
 
+.ent-mobile-images-container {
+    display:none;
+}
+
+.mobile-image-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 .image1 {
-    background: url('img/yachtsailing/4.jpg') no-repeat center center/cover;
+    background: url('../img/watersports/1.jpg') no-repeat center center/cover;
 }
 
  .image2 {
-    background: url('img/yachtsailing/3.jpg') no-repeat center center/cover;
+    background: url('../img/watersports/2.jpg') no-repeat center center/cover;
 }
 
 .image3 {
-    background: url('img/yachtsailing/2.jpg') no-repeat center center/cover;
+    background: url('../img/trips/3.jpg') no-repeat center center/cover;
 }
+
+.image4 {
+    background: url('../img/trips/4.jpg') no-repeat center center/cover;
+}
+
+.image5 {
+    background: url('../img/fishing/3.jpg') no-repeat center center/cover;
+}
+
+ .image6 {
+    background: url('../img/fishing/4.jpg') no-repeat center center/cover;
+}
+
+.image7 {
+    background: url('../img/yachtsailing/1.jpg') no-repeat center center/cover;
+}
+
+.image8 {
+    background: url('../img/yachtsailing/2.jpg') no-repeat center center/cover;
+}
+
+.image9 {
+    background: url('../img/photography/1.jpg') no-repeat center center/cover;
+}
+
+.image10 {
+    background: url('../img/photography/2.jpg') no-repeat center center/cover;
+}
+
+.image11 {
+    background: url('../img/motorcycle/2.jpg') no-repeat center center/cover;
+}
+
+.image12 {
+    background: url('../img/motorcycle/4.jpg') no-repeat center center/cover;
+}
+
 
 #entertainments .ent-container {
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #entertainments .ent-container h1 {
@@ -794,6 +862,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1rem;
+    justify-content: center;
 }
 
 #entertainments .ent-container .ent-infos-container .ent-info-item p {
@@ -804,18 +873,24 @@ p {
     font-size: 3rem;
 }
 
+#entertainments .ent-container .entintro {
+    text-align: center;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.317);
+    font-size: 0.7rem;
+}
+
+
 #entertainments .ent-container .ent-infos-container .ent-info-item {
     text-align: center;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    /*
-    box-shadow: inset 0 0 15px 5px rgba(169, 163, 163, 0.15);
-    border-radius:30px;
-    */
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    flex-basis: 33%;
+    flex-grow: 0;
 }
 
 #feedback .items{
@@ -859,16 +934,23 @@ p {
     font-size: 0.8rem;
 }
 
-#contacts-footer .contact-container .logo-container div:hover {
-    background-color: #fff;
+#contacts-footer .contact-container .logo-container a{
+    text-decoration: none;
+    flex: 1;
+    color: black;
 }
 
-#contacts-footer .contact-container .logo-container div {
+#contacts-footer .contact-container .logo-container a div:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#contacts-footer .contact-container .logo-container a div {
     flex:1;
     padding: 2rem 1rem;
 }
 
-#contacts-footer .contact-container .logo-container i {
+#contacts-footer .contact-container .logo-container a i {
     font-size: 4rem;
 }
 
@@ -913,3 +995,70 @@ p {
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  @media only screen and (max-width: 860px) { 
+    #entertainments .mySlidesMobile .imgcontainer-entmobile {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    #entertainments .mySlidesMobile .imgcontainer-entmobile img {
+        width: 100%;
+        padding: 0.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 1px rgba(250, 250, 250, 0.19);
+        padding: 1rem;
+    }
+    
+
+    .mobile-image-container {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.44), 0 6px 20px 1px rgba(0, 0, 0, 0.61);
+    }
+
+    .ent-mobile-images-container {
+        display: block;
+        position: relative;
+        height: 300px;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #mySlidesMobile{
+        justify-content: center;
+    }
+
+    .ent-images-container {
+        display: none;
+    }
+
+    .entintro {
+        display:none;
+    }
+
+    #adv-footer {
+        font-size: 0.7rem;
+        padding: 0;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    #adv-footer div:nth-child(3) {
+        display: none;
+    }
+    
+    #adv-footer .icon-adv {
+        flex:1;
+    }
+    
+    #adv-footer .canaria-adv {
+        flex:1;
+    }
+    
+}

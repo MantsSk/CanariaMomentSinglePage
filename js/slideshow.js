@@ -1,6 +1,6 @@
 let sliderImages = document.getElementsByClassName('slide');
-let arrowLeft = document.getElementById('arrow-left');
-let arrowRight = document.getElementById('arrow-right');
+//let arrowLeft = document.getElementById('arrow-left');
+//let arrowRight = document.getElementById('arrow-right');
 current = 0;
 timeoutHandle = 0;
 
@@ -30,7 +30,7 @@ function slideRight(){
     sliderImages[current+1].style.display = 'block';
     current++;
 }
-
+/*
 arrowLeft.addEventListener('click', function(){
     clearTimeout(timeoutHandle);
     if (current === 0)
@@ -50,7 +50,7 @@ arrowRight.addEventListener('click', function(){
     slideRight();
     showAutoSlides();
 });
-
+*/
 function showAutoSlides() {
     timeoutHandle = setTimeout(function(){
         if (current === sliderImages.length - 1)
