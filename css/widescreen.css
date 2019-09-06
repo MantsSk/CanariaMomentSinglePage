@@ -34,9 +34,13 @@
 }
 
 #entertainments .ent-container .ent-infos-container .ent-info-item p {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #entertainments .ent-container i {
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+
+#entertainments .ent-container {
+    flex: 1.3;
 }

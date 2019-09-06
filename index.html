@@ -109,53 +109,14 @@
                     </div>
                     <div class = "calendar-column">
                         <h2>Užimtumas</h3>
-                        <div class="calendar">
-                                <div class="calendar__picture">
-                                  <h3 class ="text-primary">Lapkritis</h3>
+                            <div class="controls">
+                                    <p class="forward label" onclick="nextMonth()"><i class="fa fa-arrow-right"></i></p>
+                                    <p class="previous label" onclick="previousMonth()"><i class="fa fa-arrow-left"></i></p>
+                                    <p id="current-month" class="label bold">January</p>
                                 </div>
-                                <div class="calendar__date">
-                                  <div class="calendar__day">M</div>
-                                  <div class="calendar__day">T</div>
-                                  <div class="calendar__day">W</div>
-                                  <div class="calendar__day">T</div>
-                                  <div class="calendar__day">F</div>
-                                  <div class="calendar__day">S</div>
-                                  <div class="calendar__day">S</div>
-                                  <div class="calendar__number"></div>
-                                  <div class="calendar__number"></div>
-                                  <div class="calendar__number"></div>
-                                  <div class="calendar__number">1</div>
-                                  <div class="calendar__number">2</div>
-                                  <div class="calendar__number">3</div>
-                                  <div class="calendar__number">4</div>
-                                  <div class="calendar__number">5</div>
-                                  <div class="calendar__number">6</div>
-                                  <div class="calendar__number">7</div>
-                                  <div class="calendar__number">8</div>
-                                  <div class="calendar__number">9</div>
-                                  <div class="calendar__number">10</div>
-                                  <div class="calendar__number">11</div>
-                                  <div class="calendar__number">12</div>
-                                  <div class="calendar__number">13</div>
-                                  <div class="calendar__number">14</div>
-                                  <div class="calendar__number">15</div>
-                                  <div class="calendar__number">16</div>
-                                  <div class="calendar__number">17</div>
-                                  <div class="calendar__number calendar__number--current">18</div>
-                                  <div class="calendar__number">19</div>
-                                  <div class="calendar__number">20</div>
-                                  <div class="calendar__number">21</div>
-                                  <div class="calendar__number">22</div>
-                                  <div class="calendar__number">23</div>
-                                  <div class="calendar__number">24</div>
-                                  <div class="calendar__number">25</div>
-                                  <div class="calendar__number">26</div>
-                                  <div class="calendar__number">27</div>
-                                  <div class="calendar__number">28</div>
-                                  <div class="calendar__number">29</div>
-                                  <div class="calendar__number">30</div>
+                                <div class="calendar" id="calendar">
+                                    <!-- Calandar HTML output here -->
                                 </div>
-                              </div>
                               <div class = "calendar-legend">
                                 <div class = "legend-item">
                                     <p>Laisva - </p>
@@ -374,7 +335,7 @@
             <p class = "entintro">Siūlome pasiplaukiojimus jachta arba katamaranais kur į kainą įskaičiuoti gardūs užkandžiai, šaltas alus ir gardi Kanariška sangrija</p>
             <p class = "entintro">Žvejams profesionalams ir mėgėjams siūlome žvejyba Atlanto vandenyne kur pagautas laimikis tikrai sukels jaudulį ir džiaugsmą</p>
             <p class = "entintro">Vykdome trumpas ekskursijas laivu po vandenyną, kurios suteikia galimybę pamatyti laukinių delfinų, banginių bei skraidančių žuvų</p>
-            <p class = "entintro">Vandens sportas - puiki pramoga adrenalino mėgėjams. Siūlome skraidymą su parašiutu, daivingą(nardymą). Taip pat galima išmėginti vandens motociklus, vandens slides ir daug kitų vandens pramogų</p>
+            <p class = "entintro">Vandens sportas - pramoga adrenalino mėgėjams. Siūlome skraidymą su parašiutu, nardymą. Taip pat galima išmėginti vandens motociklus, slides ir kitas vandens pramogas</p>
             <p class = "entintro">Vykdome keliones džipais, buggiais ir keturačiais motociklais po kalnus</p>
             <div class = "ent-infos-container">
                 <div class = "ent-info-item">
@@ -455,7 +416,7 @@
                         <p>Canaria.Moment@gmail.com</p>
                     </div>
                 </a>
-                <a href = "whatsapp://tel:3216541234">
+                <a href = "#">
                     <div class = "contactnumber contact">
                         <h3>WhatsApp</h3>
                         <i class="fab fa-whatsapp" style="color:rgba(219, 208, 43, 0.596)" aria-hidden="true"></i>
@@ -487,5 +448,6 @@
     <script type="text/javascript" src = "js/slideshowEnt.js"></script>
     <script type="text/javascript" src = "js/makeactive.js"></script>
     <script type="text/javascript" src = "js/navbar.js"></script>
+    <script type="text/javascript" src = "js/calendar.js"></script>
 </body>
 </html>
